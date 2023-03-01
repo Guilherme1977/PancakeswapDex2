@@ -65,10 +65,10 @@ export const USDC_GOERLI = new Token(
 
 export const USDC_GOERLI_ARBI = new Token(
   ChainId.GOERLI_ARBI,
-  '0x179522635726710Dd7D2035a81d856de4Aa7836c',
+  '0x206Fd4f2d9bA776BE7531fE654a08bBB36b4b5F1',
   6,
   'USDC',
-  'USDC',
+  'USD Coin',
 )
 
 export const USDT_BSC = new Token(

@@ -237,7 +237,7 @@
     {
       "name": "USD Coin",
       "symbol": "USDC",
-      "address": "0x179522635726710Dd7D2035a81d856de4Aa7836c",
+      "address": "0x206Fd4f2d9bA776BE7531fE654a08bBB36b4b5F1",
       "chainId": 421613,
       "decimals": 6,
       "logoURI": "https://pancakeswap.finance/images/tokens/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d.png"

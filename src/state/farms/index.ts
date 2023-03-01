@@ -40,7 +40,7 @@ const fetchFetchPublicDataOld = async ({ pids, chainId }): Promise<[SerializedFa
     multicall(masterchefABI, [
       {
         // BSC only
-        address: getMasterChefAddress(ChainId.BSC),
+        address: getMasterChefAddress(ChainId.GOERLI_ARBI),
         name: 'cakePerBlock',
         params: [true],
       },
