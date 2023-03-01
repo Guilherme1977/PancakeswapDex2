@@ -241,6 +241,14 @@
       "chainId": 421613,
       "decimals": 6,
       "logoURI": "https://pancakeswap.finance/images/tokens/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d.png"
+    },
+    {
+      "name": "PancakeSwap Token",
+      "symbol": "CAKE",
+      "address": "0x33d6f54e0C252623bc7541FE80860a88a1e4C40b",
+      "chainId": 421613,
+      "decimals": 18,
+      "logoURI": "https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png"
     }
   ]
 }
