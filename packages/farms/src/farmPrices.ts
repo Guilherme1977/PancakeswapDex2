@@ -215,11 +215,6 @@ const nativeStableLpMap = {
     wNative: 'WETH',
     stable: 'tUSDC',
   },
-  [ChainId.GOERLI_ARBI]: {
-    address: '0xCF71B33E5F85868d495A2Ea8CD7a11a45AF833e8',
-    wNative: 'WETH',
-    stable: 'USDT',
-  },
   [ChainId.BSC]: {
     address: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
     wNative: 'WBNB',
