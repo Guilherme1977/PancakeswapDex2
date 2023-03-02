@@ -22,7 +22,7 @@ import SwapTab, { SwapType } from './components/SwapTab'
 const CHART_SUPPORT_CHAIN_IDS = [ChainId.BSC]
 export const ACCESS_TOKEN_SUPPORT_CHAIN_IDS = [ChainId.BSC]
 
-const STABLE_SUPPORT_CHAIN_IDS = [ChainId.BSC_TESTNET]
+const STABLE_SUPPORT_CHAIN_IDS = [ChainId.GOERLI_ARBI, ChainId.BSC_TESTNET]
 
 export default function Swap() {
   const { isMobile } = useMatchBreakpoints()

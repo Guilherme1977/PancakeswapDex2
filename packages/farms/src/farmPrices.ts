@@ -90,7 +90,7 @@ const getFarmFromTokenAddress = (
 
 const filterFarmsByQuoteToken = (
   farms: SerializedFarmPublicData[],
-  preferredQuoteTokens: string[] = ['BUSD', 'WBNB'],
+  preferredQuoteTokens: string[] = ['BUSD', 'WETH'],
 ): SerializedFarmPublicData => {
   const preferredFarm = farms.find((farm) => {
     return preferredQuoteTokens.some((quoteToken) => {
@@ -228,6 +228,11 @@ const nativeStableLpMap = {
   [ChainId.BSC_TESTNET]: {
     address: '0x4E96D2e92680Ca65D58A0e2eB5bd1c0f44cAB897',
     wNative: 'WBNB',
+    stable: 'BUSD',
+  },
+  [ChainId.GOERLI_ARBI]: {
+    address: '0x21e8A6339eEdD1559221d6d9D44Af6d81e999E4B',
+    wNative: 'WETH',
     stable: 'BUSD',
   },
 }

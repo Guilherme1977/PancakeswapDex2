@@ -1,4 +1,4 @@
-import { rinkeby, mainnet, goerli, arbitrumGoerli } from 'wagmi/chains'
+import { rinkeby, mainnet, goerli } from 'wagmi/chains'
 import { Chain } from 'wagmi'
 
 export const avalandche: Chain = {
@@ -115,4 +115,27 @@ export const bscTest: Chain = {
   testnet: true,
 }
 
-export { rinkeby, mainnet, goerli, arbitrumGoerli }
+export const arbitrumGoerli: Chain = {
+  id: 421613,
+  name: 'Arbitrum Goerli Testnet',
+  network: 'arbitrumGoerli-testnet',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'Ether Token',
+    symbol: 'ETH',
+  },
+  rpcUrls: {
+    public: 'https://goerli-rollup.arbitrum.io/rpc',
+    default: 'https://goerli-rollup.arbitrum.io/rpc',
+  },
+  blockExplorers: {
+    default: { name: 'ArbiCcan', url: 'https://goerli.arbiscan.io' },
+  },
+  multicall: {
+    address: '0x4f00CF3207f80397b89445a0f6Fe8ab268E0ecB3',
+    blockCreated: 9452058,
+  },
+  testnet: true,
+}
+
+export { rinkeby, mainnet, goerli }

@@ -31,6 +31,7 @@ const ProxyFarmCardContainer = ({ farm }) => {
 const FarmsPage = () => {
   const { account } = useWeb3React()
   const { chosenFarmsMemoized } = useContext(FarmsContext)
+  console.log(chosenFarmsMemoized)
   const cakePrice = usePriceCakeBusd()
   return (
     <>

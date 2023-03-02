@@ -407,13 +407,13 @@ export function useGasPrice(): string {
   const userGas = useSelector<AppState, AppState['user']['gasPrice']>((state) => state.user.gasPrice)
   const { data } = useFeeData({
     chainId,
-    enabled: chainId !== ChainId.BSC && chainId !== ChainId.BSC_TESTNET,
+    enabled: chainId !== ChainId.BSC && chainId !== ChainId.GOERLI_ARBI,
     watch: true,
   })
   if (chainId === ChainId.BSC) {
     return userGas
   }
-  if (chainId === ChainId.BSC_TESTNET) {
+  if (chainId === ChainId.GOERLI_ARBI) {
     return GAS_PRICE_GWEI.testnet
   }
   if (chain?.testnet) {

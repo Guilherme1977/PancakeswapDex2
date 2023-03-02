@@ -16,6 +16,13 @@ const farms: SerializedFarmConfig[] = [
     token: goerliArbiTestnetTokens.weth,
     quoteToken: goerliArbiTestnetTokens.usdt,
   },
+  {
+    pid: 2,
+    lpSymbol: 'WETH-BUSD LP',
+    lpAddress: '0x21e8A6339eEdD1559221d6d9D44Af6d81e999E4B',
+    token: goerliArbiTestnetTokens.weth,
+    quoteToken: goerliArbiTestnetTokens.busd,
+  },
 ]
 
 export default farms

@@ -61,6 +61,7 @@ export const livePools: SerializedPoolConfig[] = [
     contractAddress: {
       97: '0xB4A466911556e39210a6bB2FaECBB59E4eB7E43d',
       56: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
+      421613: '0xAb0924A6fb33f718c5f14DDA12F2d1beb08d9f66',
     },
     poolCategory: PoolCategory.CORE,
     tokenPerBlock: '10',
