@@ -8,8 +8,7 @@ const options = {
 
 export const stakeFarm = async (masterChefContract: Contract, pid, amount, gasPrice) => {
   const value = new BigNumber(amount).times(DEFAULT_TOKEN_DECIMAL).toString()
-
-  return masterChefContract.deposit(pid, value, { ...options, gasPrice })
+  return masterChefContract.deposit(pid, value)
 }
 
 export const unstakeFarm = async (masterChefContract, pid, amount, gasPrice) => {

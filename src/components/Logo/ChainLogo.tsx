@@ -9,7 +9,7 @@ export const ChainLogo = memo(({ chainId }: { chainId: number }) => {
       <Image
         src={
           chainId === 421613
-            ? 'https://app.1inch.io/assets/images/network-logos/arbitrum.svg'
+            ? 'https://cdn.o3.network/token-profile/arbitrum/0x0000000000000000000000000000000000000000/logo.png'
             : `/images/chains/${chainId}.png`
         }
         width={24}

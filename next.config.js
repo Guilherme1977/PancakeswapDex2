@@ -82,6 +82,24 @@ const config = {
         ],
       },
       {
+        source: '/images/421613/:all*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, immutable, max-age=31536000',
+          },
+        ],
+      },
+      {
+        source: '/images/chains/:all*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, immutable, max-age=31536000',
+          },
+        ],
+      },
+      {
         source: '/images/tokens/:all*',
         headers: [
           {
