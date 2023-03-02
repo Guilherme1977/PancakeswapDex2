@@ -16,7 +16,6 @@ export function createFarmFetcher(multicallv2: MultiCallV2) {
   ) => {
     const { isTestnet, farms, chainId } = params
     const masterChefAddress = masterChefAddresses[ChainId.GOERLI_ARBI]
-    console.log(params, masterChefAddress, 'createFarmFetcher')
     const { poolLength, totalRegularAllocPoint, totalSpecialAllocPoint, cakePerBlock } = await fetchMasterChefV2Data({
       isTestnet,
       multicallv2,

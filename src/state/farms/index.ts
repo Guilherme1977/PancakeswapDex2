@@ -65,7 +65,6 @@ const fetchFarmPublicDataPkg = async ({ pids, chainId, chain }): Promise<[Serial
   const farmsCanFetch = farmsConfig
   // .filter((farmConfig) => pids.includes(farmConfig.pid))
   const priceHelperLpsConfig = getFarmsPriceHelperLpFiles(chainId)
-  console.log(pids, chainId, chain, farmsCanFetch, farmsCanFetch.concat(priceHelperLpsConfig))
 
   const { farmsWithPrice, poolLength, regularCakePerBlock } = await farmFetcher.fetchFarms({
     chainId,
@@ -90,7 +89,6 @@ const initialState: SerializedFarmsState = {
 export const fetchInitialFarmsData = createAsyncThunk<SerializedFarm[], { chainId: number }>(
   'farms/fetchInitialFarmsData',
   async ({ chainId }) => {
-    console.log('fetchInitialFarmsData')
     const farmDataList = await getFarmConfig(chainId)
     return farmDataList.map((farm) => ({
       ...farm,
@@ -117,7 +115,7 @@ export const fetchFarmsPublicDataAsync = createAsyncThunk<
   async ({ pids, chainId, flag = 'pkg' }) => {
     const chain = chains.find((c) => c.id === chainId)
     if (!chain || !farmFetcher.isChainSupported(chain.id)) throw new Error('chain not supported')
-    console.log(pids, chainId, flag, 'fetchFarmsPublicDataAsync')
+
     try {
       if (flag === 'old') {
         return fetchFetchPublicDataOld({ pids, chainId })
@@ -237,7 +235,6 @@ export const fetchFarmUserDataAsync = createAsyncThunk<
 >(
   'farms/fetchFarmUserDataAsync',
   async ({ account, pids, proxyAddress, chainId }, config) => {
-    console.log('fetchFarmUserDataAsync')
     if (!farmFetcher.isChainSupported(chainId)) {
       throw new Error(`chain id ${chainId} not supported`)
     }
