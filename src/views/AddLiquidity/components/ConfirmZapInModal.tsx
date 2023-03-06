@@ -71,7 +71,6 @@ const ConfirmZapInModal: React.FC<React.PropsWithChildren<InjectedModalProps & C
 }) => {
   const { t } = useTranslation()
   const { chainId } = useActiveWeb3React()
-
   const totalPoolTokens = useTotalSupply(pair.liquidityToken)
   const swapInCurrencyAmount = parsedAmounts[zapSwapTokenField]
   const swapOutCurrencyAmount = parsedAmounts[zapSwapOutTokenField]

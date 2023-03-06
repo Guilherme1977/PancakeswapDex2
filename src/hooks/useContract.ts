@@ -344,7 +344,8 @@ export const usePotterytDrawContract = () => {
 }
 
 export function useZapContract(withSignerIfPossible = true) {
-  return useContract<Zap>(getZapAddress(), zapAbi, withSignerIfPossible)
+  const { chainId } = useActiveWeb3React()
+  return useContract<Zap>(getZapAddress(chainId), zapAbi, withSignerIfPossible)
 }
 
 export function useBCakeFarmBoosterContract(withSignerIfPossible = true) {
