@@ -56,9 +56,9 @@ export function UnsupportedNetworkModal() {
             isLoading={isLoading}
             onClick={() => {
               if (supportedMainnetChains.map((c) => c.id).includes(chainId)) {
-                switchNetworkAsync(chainId)
+                switchNetworkAsync(421613)
               } else {
-                switchNetworkAsync(supportedMainnetChains[0].id)
+                switchNetworkAsync(421613)
               }
             }}
           >
