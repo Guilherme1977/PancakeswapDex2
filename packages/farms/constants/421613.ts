@@ -11,10 +11,10 @@ const farms: SerializedFarmConfig[] = [
   },
   {
     pid: 1,
-    lpSymbol: 'BUSD-USDT LP',
-    lpAddress: '0xF8ee8bB5D1149f29054904Eef2B21DDeF7EdbE23',
-    token: goerliArbiTestnetTokens.busd,
-    quoteToken: goerliArbiTestnetTokens.usdt,
+    lpSymbol: 'WETH-SWAPP LP',
+    lpAddress: '0x07FFD9A8b90A92dfD60Ef87324Fa3e65C1A2dC77',
+    token: goerliArbiTestnetTokens.weth,
+    quoteToken: goerliArbiTestnetTokens.swapp,
   },
   {
     pid: 2,

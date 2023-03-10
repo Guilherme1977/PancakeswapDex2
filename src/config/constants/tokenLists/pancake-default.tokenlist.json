@@ -249,6 +249,13 @@
       "chainId": 421613,
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.png"
+    },
+    {
+      "name": "SWAPP",
+      "symbol": "SWAPP",
+      "address": "0x5cC486465A229308b1BD0b0F867B88a45B0c64DD",
+      "chainId": 421613,
+      "decimals": 18
     }
   ]
 }

@@ -14,6 +14,7 @@ const ProxyFarmCardContainer = ({ farm }) => {
   const cakePrice = usePriceCakeBusd()
 
   const { proxyFarm, shouldUseProxyFarm } = useContext(YieldBoosterStateContext)
+  console.log(shouldUseProxyFarm, "shouldUseProxyFarm")
   const finalFarm = shouldUseProxyFarm ? proxyFarm : farm
 
   return (

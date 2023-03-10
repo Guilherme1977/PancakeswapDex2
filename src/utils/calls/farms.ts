@@ -18,5 +18,5 @@ export const unstakeFarm = async (masterChefContract, pid, amount, gasPrice) => 
 }
 
 export const harvestFarm = async (masterChefContract, pid, gasPrice) => {
-  return masterChefContract.deposit(pid, '0', { ...options, gasPrice })
+  return masterChefContract.deposit(pid, '0')
 }

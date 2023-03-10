@@ -152,6 +152,15 @@ export const BUSD_GOERLI_ARBI = new Token(
   'https://www.paxos.com/busd/',
 )
 
+export const SWAPP_GOERLI_ARBI = new Token(
+  ChainId.GOERLI_ARBI,
+  '0x5cC486465A229308b1BD0b0F867B88a45B0c64DD',
+  18,
+  'SWAPP',
+  'SWAPP',
+  '',
+)
+
 export const BUSD: Record<ChainId, Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
   [ChainId.RINKEBY]: BUSD_RINKEBY,
@@ -164,7 +173,7 @@ export const BUSD: Record<ChainId, Token> = {
 export const CAKE = {
   [ChainId.BSC]: CAKE_MAINNET,
   [ChainId.BSC_TESTNET]: CAKE_TESTNET,
-  [ChainId.GOERLI_ARBI]: USDT_GOERLI_ARBI,
+  [ChainId.GOERLI_ARBI]: SWAPP_GOERLI_ARBI,
 }
 
 export const USDC = {

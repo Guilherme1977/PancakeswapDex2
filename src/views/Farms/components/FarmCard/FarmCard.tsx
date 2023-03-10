@@ -54,6 +54,7 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
   account,
   originalLiquidity,
 }) => {
+  console.log(farm)
   const { t } = useTranslation()
   const { chainId } = useActiveWeb3React()
 
