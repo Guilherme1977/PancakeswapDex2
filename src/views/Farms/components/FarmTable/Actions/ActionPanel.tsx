@@ -119,6 +119,7 @@ const ActionPanel: React.FunctionComponent<React.PropsWithChildren<ActionPanelPr
   const { proxyFarm, shouldUseProxyFarm } = useContext(YieldBoosterStateContext)
 
   const farm = details
+  console.log(details, "details")
 
   const { isDesktop } = useMatchBreakpoints()
 

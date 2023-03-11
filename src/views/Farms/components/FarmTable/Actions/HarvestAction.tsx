@@ -62,7 +62,7 @@ export const HarvestAction: React.FunctionComponent<React.PropsWithChildren<Harv
   const cakePrice = usePriceCakeBusd()
   let earnings = BIG_ZERO
   let earningsBusd = 0
-  let displayBalance = userDataReady ? earnings.toFixed(5, BigNumber.ROUND_DOWN) : <Skeleton width={60} />
+  let displayBalance = earnings.toFixed(5, BigNumber.ROUND_DOWN)
 
   // If user didn't connect wallet default balance will be 0
   if (!earningsBigNumber.isZero()) {
@@ -71,9 +71,7 @@ export const HarvestAction: React.FunctionComponent<React.PropsWithChildren<Harv
     displayBalance = earnings.toFixed(5, BigNumber.ROUND_DOWN)
   }
 
-  const toolTipBalance = !userDataReady ? (
-    <Skeleton width={60} />
-  ) : earnings.isGreaterThan(new BigNumber(0.00001)) ? (
+  const toolTipBalance = earnings.isGreaterThan(new BigNumber(0.00001)) ? (
     earnings.toFixed(5, BigNumber.ROUND_DOWN)
   ) : (
     `< 0.00001`
@@ -115,7 +113,7 @@ export const HarvestAction: React.FunctionComponent<React.PropsWithChildren<Harv
           )}
         </div>
         <Button
-          disabled={earnings.eq(0) || pendingTx || !userDataReady}
+          disabled={earnings.eq(0) || pendingTx}
           onClick={async () => {
             const receipt = await fetchWithCatchTxError(() => {
               return onReward()

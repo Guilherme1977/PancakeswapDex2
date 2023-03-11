@@ -303,20 +303,20 @@ const Staked: React.FunctionComponent<React.PropsWithChildren<StackedActionProps
     )
   }
 
-  if (!userDataReady) {
-    return (
-      <StyledActionContainer>
-        <ActionTitles>
-          <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
-            {t('Start Farming')}
-          </Text>
-        </ActionTitles>
-        <ActionContent>
-          <Skeleton width={180} marginBottom={28} marginTop={14} />
-        </ActionContent>
-      </StyledActionContainer>
-    )
-  }
+  // if (!userDataReady) {
+  //   return (
+  //     <StyledActionContainer>
+  //       <ActionTitles>
+  //         <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
+  //           {t('Start Farming')}
+  //         </Text>
+  //       </ActionTitles>
+  //       <ActionContent>
+  //         <Skeleton width={180} marginBottom={28} marginTop={14} />
+  //       </ActionContent>
+  //     </StyledActionContainer>
+  //   )
+  // }
 
   return (
     <StyledActionContainer>
