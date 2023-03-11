@@ -174,6 +174,10 @@ const FarmTable: React.FC<React.PropsWithChildren<ITableProps>> = ({ farms, cake
           <StyledTable>
             <TableBody>
               {sortedRows.map((row) => {
+                if (row.farm.pid === 2) {
+                  return <></>
+                }
+                
                 return row?.details?.boosted ? (
                   <ProxyFarmContainer key={`table-row-${row.farm.pid}`} farm={row.details}>
                     <Row {...row} userDataReady={userDataReady} />
