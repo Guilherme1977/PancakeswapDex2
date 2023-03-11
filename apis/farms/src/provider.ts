@@ -23,3 +23,11 @@ export const goerliProvider = new StaticJsonRpcProvider(
   },
   5,
 )
+
+export const goerliArbiProvider = new StaticJsonRpcProvider(
+  {
+    url: 'https://goerli-rollup.arbitrum.io/rpc',
+    skipFetchSetup: true,
+  },
+  421613,
+)

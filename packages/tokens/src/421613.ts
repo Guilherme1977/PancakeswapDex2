@@ -14,6 +14,5 @@ export const goerliArbiTestnetTokens = {
   usdc: USDC_GOERLI_ARBI,
   usdt: USDT_GOERLI_ARBI,
   busd: BUSD_GOERLI_ARBI,
-  cake: CAKE_GOERLI_ARBI,
-  swapp: SWAPP_GOERLI_ARBI
+  cake: SWAPP_GOERLI_ARBI,
 }

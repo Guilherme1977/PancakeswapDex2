@@ -167,6 +167,8 @@ export const getFarmsPrices = (farms: FarmData[], chainId: number): FarmWithPric
       nativeStableLpMap[chainId].stable,
     ])
 
+    console.log(quoteTokenFarm, `quoteTokenFarm${farm.pid}`)
+
     const quoteTokenPriceBusd = getFarmQuoteTokenPrice(
       farm,
       quoteTokenFarm,
@@ -200,9 +202,9 @@ export const getFarmsPrices = (farms: FarmData[], chainId: number): FarmWithPric
         )
     return {
       ...farm,
-      tokenPriceBusd: tokenPriceBusd.toString(),
-      quoteTokenPriceBusd: quoteTokenPriceBusd.toString(),
-      lpTokenPrice: lpTokenPrice.toString(),
+      tokenPriceBusd: (1).toString(),
+      quoteTokenPriceBusd: (1).toString(),
+      lpTokenPrice: (3).toString(),
     }
   })
 

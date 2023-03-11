@@ -54,7 +54,6 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
   account,
   originalLiquidity,
 }) => {
-  console.log(farm)
   const { t } = useTranslation()
   const { chainId } = useActiveWeb3React()
 
@@ -83,6 +82,10 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
   const toggleExpandableSection = useCallback(() => {
     setShowExpandableSection((prev) => !prev)
   }, [])
+
+  if (farm.pid === 2) {
+    return <></>;
+  }
 
   return (
     <StyledCard isActive={isPromotedFarm}>
